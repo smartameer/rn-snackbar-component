@@ -1,5 +1,5 @@
 {
-  "name": "rn-snackbar",
+  "name": "rn-snackbar-component",
   "version": "0.0.1",
   "description": "A snackbar component for Android and iOS",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smartameer/rn-snackbar.git"
+    "url": "git+https://github.com/smartameer/rn-snackbar-component.git"
   },
   "keywords": [
     "snackbar",
@@ -23,9 +23,9 @@
   "author": "smartameer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smartameer/rn-snackbar/issues"
+    "url": "https://github.com/smartameer/rn-snackbar-component/issues"
   },
-  "homepage": "https://github.com/smartameer/rn-snackbar#readme",
+  "homepage": "https://github.com/smartameer/rn-snackbar-component#readme",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^5.11.0",

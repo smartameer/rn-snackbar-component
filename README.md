@@ -1,4 +1,4 @@
-# React Native SnackBar (rn-snackbar)
+# React Native SnackBar (rn-snackbar-component)
 A snackbar component for Android and iOS, customizable and simple.
 
 ![Snackbar demo](https://media.giphy.com/media/zChTSWog7TNmM/giphy.gif)
@@ -9,13 +9,13 @@ See [Google Material Design](https://material.io/guidelines/components/snackbars
 ## Installation
 
 ```sh
-npm install --save rn-snackbar
+npm install --save rn-snackbar-component
 ```
 
 ## Basic Usage
 
 ```javascript
-import SnackBar from 'rn-snackbar'
+import SnackBar from 'rn-snackbar-component'
 ```
 
 ## Code
