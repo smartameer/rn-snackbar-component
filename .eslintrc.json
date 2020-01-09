@@ -10,6 +10,7 @@
     "import/no-extraneous-dependencies": "off",
     "react/jsx-filename-extension": "off",
     "react/sort-comp": "off",
+    "react/forbid-prop-types": "off",
     "no-use-before-define": "off",
     "react/destructuring-assignment": "off",
     "jsx-a11y/img-has-alt": "off"
