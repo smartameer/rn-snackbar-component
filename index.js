@@ -91,7 +91,7 @@ class Snackbar extends Component {
     this.state.translateValue.setValue(this.props.visible ? 1 : 0);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.visible && !this.props.visible) {
       Animated.timing(this.state.translateValue, {
         duration: durationValues.entry,
@@ -107,7 +107,7 @@ class Snackbar extends Component {
     }
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  UNSAFE_componentWillUpdate(nextProps, nextState) {
     if (nextProps.visible !== this.props.visible
       || nextState.hideDistance !== this.state.hideDistance) {
       if (nextProps.visible) {
