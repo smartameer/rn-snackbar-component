@@ -107,11 +107,11 @@ class Snackbar extends Component {
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevProps.visible !== this.props.visible
-      || prevState.hideDistance !== this.state.hideDistance) {
-      if (prevProps.visible) {
-        this.props.distanceCallback(prevState.hideDistance + this.props.bottom);
+  componentWillUpdate(nextProps, nextState) {
+    if (nextProps.visible !== this.props.visible
+      || nextState.hideDistance !== this.state.hideDistance) {
+      if (nextProps.visible) {
+        this.props.distanceCallback(nextState.hideDistance + this.props.bottom);
       } else {
         this.props.distanceCallback(this.props.bottom);
       }
