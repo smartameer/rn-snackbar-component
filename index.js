@@ -97,7 +97,7 @@ class Snackbar extends Component {
         duration: durationValues.entry,
         toValue: 1,
         easing: easingValues.entry,
-        useNativeDriver: false,
+        useNativeDriver: this.props.native,
       }).start();
       if (nextProps.autoHidingTime) {
         const hideFunc = this.hideSnackbar.bind(this);
@@ -128,7 +128,7 @@ class Snackbar extends Component {
       duration: durationValues.exit,
       toValue: 0,
       easing: easingValues.exit,
-      useNativeDriver: false,
+      useNativeDriver: this.props.native,
     }).start();
   }
 }
@@ -141,12 +141,14 @@ Snackbar.defaultProps = {
   distanceCallback: noop,
   actionHandler: noop,
   bottom: 0,
+  // eslint-disable-next-line
   top: 0,
   visible: false,
   position: 'bottom',
   action: '',
   message: '',
   autoHidingTime: 0, // Default value will not auto hide the snack bar as the old version.
+  native: true,
 };
 
 Snackbar.propTypes = {
@@ -157,13 +159,13 @@ Snackbar.propTypes = {
   distanceCallback: PropTypes.func,
   actionHandler: PropTypes.func,
   bottom: PropTypes.number,
-  // eslint-disable-next-line
   top: PropTypes.number,
   visible: PropTypes.bool,
   action: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   position: PropTypes.oneOf(['bottom', 'top']), // bottom (default), top
   autoHidingTime: PropTypes.number, // How long (in milliseconds) the snack bar will be hidden.
+  native: PropTypes.bool,
 };
 
 const styles = StyleSheet.create({

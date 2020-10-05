@@ -70,6 +70,7 @@ import SnackBar from 'rn-snackbar-component'
 | top | number | The starting top position of snackbar | 0 |
 | position | string | The position of the snackbar: top, bottom | bottom |
 | autoHidingTime | number | How many milliseconds the snackbar will be hidden | 0 (Do not hide automatically) |
+| native | bool | Using native driver | true |
 
 ## Note
 
