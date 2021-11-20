@@ -1,6 +1,6 @@
 {
   "name": "rn-snackbar-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A snackbar component for Android and iOS",
   "main": "index.js",
   "scripts": {
@@ -37,6 +37,12 @@
   "peerDependencies": {
     "react": ">=15.3.1",
     "react-native": "*"
+  },
+  "resolutions": {
+    "**/**/lodash": ">=4.17.21",
+    "**/**/path-parse": ">=1.0.7",
+    "**/**/ansi-regex": "^5.0.1",
+    "**/**/hosted-git-info": ">=2.8.9"
   },
   "dependencies": {
     "prop-types": "^15.6.0"
