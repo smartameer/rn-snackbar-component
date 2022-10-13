@@ -45,6 +45,7 @@
     "**/**/hosted-git-info": ">=2.8.9"
   },
   "dependencies": {
+    "deprecated-react-native-prop-types": "^2.3.0",
     "prop-types": "^15.6.0"
   }
 }
