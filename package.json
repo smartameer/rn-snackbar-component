@@ -1,6 +1,6 @@
 {
   "name": "rn-snackbar-component",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A snackbar component for Android and iOS",
   "main": "index.js",
   "scripts": {
