@@ -1,11 +1,12 @@
 {
   "name": "rn-snackbar-component",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A snackbar component for Android and iOS",
-  "main": "index.js",
+  "main": "src/index",
+  "source": "src/index",
+  "react-native": "src/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint --fix ./index.js"
+    "lint": "eslint --fix src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -39,9 +40,12 @@
     "react-native": "*"
   },
   "resolutions": {
+    "**/**/json5": ">=1.0.2",
     "**/**/lodash": ">=4.17.21",
     "**/**/path-parse": ">=1.0.7",
+    "**/**/semver": ">=6.3.1",
     "**/**/ansi-regex": "^5.0.1",
+    "**/**/word-wrap": ">=1.2.4",
     "**/**/hosted-git-info": ">=2.8.9"
   },
   "dependencies": {

@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "rules": {
+    "semi": [2, "never"],
     "no-confusing-arrow": "off",
     "no-shadow": "off",
     "no-param-reassign": "off",

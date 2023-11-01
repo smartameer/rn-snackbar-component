@@ -1,18 +1,17 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {
   View,
   TouchableOpacity,
   TouchableNativeFeedback,
 } from 'react-native'
-import { ViewPropTypes } from 'deprecated-react-native-prop-types'
+
 import {
   IS_ANDROID,
   IS_LT_LOLLIPOP,
-  noop,
-} from './utils'
+} from '../utils'
+import { TapDefaultProps, TapProps } from '../common/properties'
 
-const Touchable = ({ onPress, style, children }) => {
+const Tap = ({ onPress, style, children }) => {
   if (IS_ANDROID && !IS_LT_LOLLIPOP) {
     return (
       <TouchableNativeFeedback
@@ -32,15 +31,7 @@ const Touchable = ({ onPress, style, children }) => {
   )
 }
 
-Touchable.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  style: ViewPropTypes.style,
-  children: PropTypes.node.isRequired,
-}
+Tap.propTypes = TapProps
+Tap.defaultProps = TapDefaultProps
 
-Touchable.defaultProps = {
-  onPress: noop,
-  style: {}
-}
-
-export default Touchable
+export default Tap
