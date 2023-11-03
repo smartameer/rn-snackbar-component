@@ -1,6 +1,9 @@
 # React Native SnackBar (rn-snackbar-component)
 A snackbar component for Android and iOS, customizable and simple.
 
+[![npm downloads](https://img.shields.io/npm/dm/rn-snackbar-component.svg)](https://www.npmjs.com/package/rn-snackbar-component)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/smartameer/rn-snackbar-component/master/LICENSE)
+
 <img src="https://i.imgur.com/UHiSUTe.jpg" width=360 />
 
 See [Google Material Design](https://material.io/guidelines/components/snackbars-toasts.html) for more info on Snackbars.
